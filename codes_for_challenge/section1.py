@@ -29,7 +29,7 @@ u.PoliceDistrict = u.PoliceDistrict.map({
                                         })
 print u.Make.unique().tolist()
 u.Make = u.Make.str.lower().str[:3]
-u = u[u.ViolDate < dt.datetime(2019,1,1)]
+u = u[u.NoticeDate < dt.datetime(2019,1,1)]
 
 # ===============================================
 #  Estimating mean fine cost
